@@ -8,7 +8,11 @@ class CategoriaController extends BaseController
 {
 
     public function index(): string{
-        return view('categorias/listar');
+        //Solicitar las secciones: HEADER+FOOTER
+        $datos['headerAdmin'] = view('layout/headeradmin'); 
+        $datos['footerAdmin'] = view('layout/footeradmin'); 
+
+        return view('categorias/listar', $datos);
     }
 
     public function crear() : string{

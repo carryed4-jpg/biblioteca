@@ -522,3 +522,104 @@ in APPPATH\Controllers\CategoriaController.php on line 18.
  5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 DEBUG - 2025-08-21 20:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-21 20:36:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "categorias/listr.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('categorias/listr.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('categorias/listr', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(11): view('categorias/listr')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-21 20:39:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Layouts/headerAdmin.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/headerAdmin.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Layouts/headerAdmin', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(12): view('Layouts/headerAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-21 20:41:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Layouts/headeradmin.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/headeradmin.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Layouts/headeradmin', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(12): view('Layouts/headeradmin')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-21 20:41:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Layouts/headeradmin.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/headeradmin.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Layouts/headeradmin', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(12): view('Layouts/headeradmin')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-21 20:41:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Layouts/headeradmin.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/headeradmin.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Layouts/headeradmin', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(12): view('Layouts/headeradmin')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-21 20:41:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Layouts/headeradmin.php"
+[Method: GET, Route: categorias]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Layouts/headeradmin.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('Layouts/headeradmin', [], true)
+ 3 APPPATH\Controllers\CategoriaController.php(12): view('Layouts/headeradmin')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-21 20:42:17 --> ErrorException: Undefined variable $header
+[Method: GET, Route: categorias]
+in APPPATH\Views\categorias\listar.php on line 1.
+ 1 APPPATH\Views\categorias\listar.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\laragon\\www\\biblioteca\\app\\Views\\categorias\\listar.php', 1)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\biblioteca\\app\\Views\\categorias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('categorias/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaController.php(15): view('categorias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-21 20:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-21 20:51:59 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: categorias]
+in APPPATH\Views\categorias\listar.php on line 20.
+ 1 APPPATH\Views\categorias\listar.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\laragon\\www\\biblioteca\\app\\Views\\categorias\\listar.php', 20)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\biblioteca\\app\\Views\\categorias\\listar.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('categorias/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaController.php(15): view('categorias/listar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
