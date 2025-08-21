@@ -1,0 +1,628 @@
+ERROR - 2025-08-20 19:23:03 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:23:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 19:23:23 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:23:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 19:23:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:23:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 19:24:27 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:24:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 19:26:17 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:26:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 19:26:49 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:26:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 19:26:53 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'biblioteca', 3306, '', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: YES) in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 19:26:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: YES)
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `recurso`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\CatalogoController.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 20:02:08 --> ErrorException: Undefined variable $rutaPortada
+[Method: GET, Route: catalogo]
+in APPPATH\Views\catalogo\index.php on line 55.
+ 1 APPPATH\Views\catalogo\index.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rutaPortada', 'C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php', 55)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('catalogo/index', [], true)
+ 5 APPPATH\Controllers\CatalogoController.php(18): view('catalogo/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 20:06:57 --> ErrorException: Undefined array key "genero"
+[Method: GET, Route: catalogo]
+in APPPATH\Views\catalogo\index.php on line 45.
+ 1 APPPATH\Views\catalogo\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('catalogo/index', [], true)
+ 5 APPPATH\Controllers\CatalogoController.php(18): view('catalogo/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 20:07:31 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: catalogo]
+in APPPATH\Views\catalogo\index.php on line 46.
+ 1 APPPATH\Views\catalogo\index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php', 46)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('catalogo/index', [], true)
+ 5 APPPATH\Controllers\CatalogoController.php(18): view('catalogo/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 20:09:30 --> ErrorException: Undefined array key "genero"
+[Method: GET, Route: catalogo]
+in APPPATH\Views\catalogo\index.php on line 45.
+ 1 APPPATH\Views\catalogo\index.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "genero"', 'C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\biblioteca\\app\\Views\\catalogo\\index.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('catalogo/index', [], true)
+ 5 APPPATH\Controllers\CatalogoController.php(18): view('catalogo/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 23:21:44 --> mysqli_sql_exception: Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'biblioteca.cu.nombreCurso' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.*, `...', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `...')
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `...')
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `...', Array, false)
+#4 C:\laragon\www\biblioteca\app\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 23:21:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'biblioteca.cu.nombreCurso' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 23:21:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'biblioteca.cu.nombreCurso' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', [], false)
+ 4 APPPATH\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 23:21:44 --> [Caused by] mysqli_sql_exception: Expression #17 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'biblioteca.cu.nombreCurso' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-20 23:22:35 --> mysqli_sql_exception: Unknown column 'r.fechaPublicacion' in 'group statement' in C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.*, `...', 0)
+#1 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `...')
+#2 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `...')
+#3 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `...', Array, false)
+#4 C:\laragon\www\biblioteca\app\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\biblioteca\app\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+#6 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+#7 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+#8 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\biblioteca\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\biblioteca\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-20 23:22:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.fechaPublicacion' in 'group statement'
+[Method: GET, Route: catalogo]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', [], false)
+ 2 APPPATH\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 23:22:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'r.fechaPublicacion' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', [], false)
+ 4 APPPATH\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-20 23:22:35 --> [Caused by] mysqli_sql_exception: Unknown column 'r.fechaPublicacion' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.*, `c`.`nombre` AS `categoria`, `cu`.`nombreCurso` AS `curso`, COUNT(uf.idFavorito) AS favoritos
+FROM `recurso` `r`
+LEFT JOIN `usuarioFavorito` `uf` ON `r`.`idRecurso` = `uf`.`idRecurso`
+LEFT JOIN `categoria` `c` ON `r`.`idCategoria` = `c`.`idCategoria`
+LEFT JOIN `curso_recurso` `cr` ON `r`.`idRecurso` = `cr`.`idRecurso`
+LEFT JOIN `curso` `cu` ON `cr`.`idCurso` = `cu`.`idCurso`
+GROUP BY `r`.`idRecurso`, `r`.`codigo`, `r`.`titulo`, `r`.`autor`, `r`.`idCategoria`, `r`.`idTipo`, `r`.`idNivel`, `r`.`anioPublicacion`, `r`.`fechaPublicacion`, `r`.`urlDigital`, `r`.`cantidad`, `r`.`ubicacion`, `r`.`descripcion`, `r`.`portada`, `r`.`formato`, `r`.`observacion`, `c`.`nombre`, `cu`.`nombreCurso`
+ORDER BY `favoritos` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH\Models\RecursoModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\CatalogoController.php(17): App\Models\RecursoModel->getLibrosPopularesConCategoriaYCurso(5)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CatalogoController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CatalogoController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

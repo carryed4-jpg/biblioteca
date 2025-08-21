@@ -2,18 +2,19 @@
 namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\RecursoModel;
+use App\Models\CategoriaModel;
 
 class CatalogoController extends Controller
 {
     public function index()
     {
-        // Cargar los datos del footer y header
-        $data['header'] = view('layout/header');
-        $data['footer'] = view('layout/footer');
+        $categoriaModel = new CategoriaModel();
+        $data['categorias'] = $categoriaModel->getAllCategorias();
 
-        // Obtener los libros desde la base de datos
+        $idUsuario = session()->get('idUsuario');
         $recursoModel = new RecursoModel();
         $data['libros'] = $recursoModel->findAll();
+        $data['librosRecomendados'] = $recursoModel->getLibrosRecomendadosPorUsuario($idUsuario, 4);
 
         return view('catalogo/index', $data);
     }

@@ -1,1 +1,57 @@
+/* Aplicación de tipografías */
+body {
+  font-family: "Nunito", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
 
+/* Estilos para la barra de navegación */
+.navbar-nav.mx-auto .nav-link {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin: 0 2px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/* Efecto de subrayado en hover - solo para menú principal, no para usuario */
+.navbar-nav.mx-auto .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #9B0000;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav.mx-auto .nav-link:hover::after {
+  width: 80%;
+  left: 10%;
+}
+
+.navbar-nav.mx-auto .nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar-nav.mx-auto .nav-item.active .nav-link {
+  background-color: #e9e9e9;
+  font-weight: 500;
+}
