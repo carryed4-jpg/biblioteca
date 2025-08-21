@@ -135,7 +135,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="/perfil.php"><i class="fa-solid fa-user-circle me-2"></i>Ver Perfil</a></li>
-                                <li><a class="dropdown-item" href="/configuracion.php"><i class="fa-solid fa-cog me-2"></i>Configuración</a></li>
+                                <li><a class="dropdown-item" href="<?= base_url('categorias'); ?>"></i>Configuración</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="/logout.php"><i class="fa-solid fa-sign-out-alt me-2"></i>Cerrar sesión</a></li>
                             </ul>

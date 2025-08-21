@@ -8,3 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 $routes->get('catalogo', 'CatalogoController::index');
 
+//Categorias
+$routes->get('/categorias', 'CategoriaController::index');
+$routes->get('/categorias/crear', 'CategoriaController::crear');
+$routes->get('/categorias/editar', 'CategoriaController::editar');
