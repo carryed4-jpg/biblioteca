@@ -1,34 +1,34 @@
-<?= $headerAdmin; ?>
+<?= $headeradmin; ?>
 
 <div class="container mt-2">
-  <h4>Lista de Categorías</h4>
+    <h4>Lista de libros</h4>
 
-  <table class="table table-sm table-striped">
+  <table class="table table-sm">
     <colgroup>
-      <col width="20%">
-      <col width="60%">
-      <col width="20%">
+      <col widht="10%">
+      <col widht="40%">
+      <col widht="30%">
+      <col widht="20%">
     </colgroup>
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Nombre</th>
+        <th>Id</th>
+        <th>Categorias</th>
         <th>Acciones</th>
       </tr>
     </thead>
-    <tbody>
-      <?php foreach ($categorias as $categoria): ?>
-      <tr>
-        <td><?= $categoria['idCategoria'] ?></td>
-        <td><?= $categoria['nombre'] ?></td>
-        <td>
-          <a href="<?= base_url('categoria/editar/' . $categoria['idCategoria']) ?>" class="btn btn-sm btn-info">Editar</a>
-          <a href="<?= base_url('categoria/eliminar/' . $categoria['idCategoria']) ?>" class="btn btn-sm btn-danger">Eliminar</a>
-        </td>
-      </tr>
-      <?php endforeach; ?>
-    </tbody>
+      <tbody>
+        <?php foreach($categorias as $categoria): ?>
+        <tr>
+          <td><?= $categoria['idCategoria'] ?></td>
+          <td><?= $categoria['nombre'] ?></td>
+          <td>
+            <a href="" class="btn btn-sm btn-info">Editar</a>
+            <a href="" class="btn btn-sm btn-danger">Eliminar</a>
+          </td>
+        </tr>
+        <?php endforeach; ?>
+      </tbody>
   </table>
-
-  <a href="<?= base_url('categoria/crear') ?>" class="btn btn-sm btn-success">Registrar Nueva Categoría</a>
+  <a href="/libros/crear" class="btn btn-sm btn-success">Registrar</a>
 </div>
