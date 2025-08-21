@@ -7,19 +7,21 @@ use App\Models\CategoriaModel;
 
 class CategoriaController extends BaseController
 {
-    public function index(): string{
-        $categoria = new CategoriaModel();
+public function index(): string {
+    $categoria = new CategoriaModel();
 
-        $datos['categorias'] = $categoria->orderBy('idCategoria', 'ASC')->findAll();
+    $datos['categorias'] = $categoria->orderBy('idCategoria', 'ASC')->findAll();
 
+    // Sidebar (headeradmin)
+    $datos['headeradmin'] = view('layout/headeradmin');
 
-        //Solicitar las secciones: HEADER+FOOTER
-        $datos['headeradmin'] = view('layout/headeradmin'); 
-        $datos['footeradmin'] = view('layout/footeradmin'); 
+    // Footer
+    $datos['footeradmin'] = view('layout/footeradmin');
 
-        return view('categorias/listar', $datos);
-    }
+    return view('administrador/categorias/listar', $datos);
+}
 
+/*
     public function crear(): string
     {
         $datos['headerAdmin'] = view('layout/headeradmin'); 
@@ -68,6 +70,6 @@ class CategoriaController extends BaseController
         $categoriaModel->delete($idCategoria);
 
         return redirect()->to(base_url('categoria'));
-    }
+    }*/
 }
 

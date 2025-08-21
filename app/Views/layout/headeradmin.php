@@ -15,12 +15,12 @@
   <!-- Sidebar vertical -->
   <nav class="nav flex-column bg-light vh-100 p-3" style="width: 220px;">
     <a class="navbar-brand mb-4" href="#">Biblioteca</a>
-    <a class="nav-link" href="<?= base_url('categorias'); ?>">Categorias</a>
-    <a class="nav-link" href="<?= base_url('editoriales'); ?>">Libros</a>
-    <a class="nav-link" href="<?= base_url('editoriales'); ?>">Recursos</a>
-    <a class="nav-link" href="<?= base_url('editoriales'); ?>">Usuarios</a>
-    <a class="nav-link" href="<?= base_url('editoriales'); ?>">Prestamos</a>
-    <a class="nav-link" href="<?= base_url('editoriales'); ?>">Reseñas</a>
+    <a class="nav-link" href="<?= base_url('administrador/categorias'); ?>">Categorias</a>
+    <a class="nav-link" href="<?= base_url(''); ?>">Libros</a>
+    <a class="nav-link" href="<?= base_url(''); ?>">Recursos</a>
+    <a class="nav-link" href="<?= base_url(''); ?>">Usuarios</a>
+    <a class="nav-link" href="<?= base_url(''); ?>">Prestamos</a>
+    <a class="nav-link" href="<?= base_url(''); ?>">Reseñas</a>
   </nav>
 
   <!-- Contenido principal -->
