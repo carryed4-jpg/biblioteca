@@ -1,4 +1,3 @@
-
 <div class="container mt-2">
     <h4>Lista de categorías</h4>
 
@@ -26,5 +25,4 @@
 
     <a href="#" class="btn btn-sm btn-success">Registrar</a>
 </div>
-
 <?= $footeradmin; ?>
